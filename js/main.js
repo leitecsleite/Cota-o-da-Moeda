@@ -1,4 +1,4 @@
-const url = 'http://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL'
+const url = 'https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,BTC-BRL'
 
 setInterval(() =>{  
 fetch(url)
@@ -24,5 +24,5 @@ fetch(url)
     buyBitcoin.innerHTML = valueMoeda[0]
 
 })
-},10000)
+},1000)
 
