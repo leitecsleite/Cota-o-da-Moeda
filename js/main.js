@@ -17,13 +17,18 @@ setInterval(() => {
                 const moedinha = moeda.bid
                 return moedinha
             })
-
+                      
             /*console.log(dataMoeda)
-            console.log(valueMoeda)*/
+             console.log(valueMoeda)*/
 
             buyDolar.innerHTML = valueMoeda[2]
             buyEuro.innerHTML = valueMoeda[1]
             buyBitcoin.innerHTML = valueMoeda[0]
+
+
+            tableBuyDolar.textContent = valueMoeda[2]
+            tableBuyEuro.textContent = valueMoeda[1]
+            tableBuyBitcoin.textContent = valueMoeda[0]
 
         })
 }, 1000)

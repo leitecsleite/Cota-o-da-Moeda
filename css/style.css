@@ -26,7 +26,7 @@ section{
    margin-top: -2.2rem;
 }
 
-section .container {
+.container {
     width: min(90vw, 800px);
     display: flex;
     flex-direction: column;
@@ -48,6 +48,39 @@ section .card{
 section .card p{
     padding-top: 0.9rem ;
 }
+#table{
+   
+    margin: 4rem 0 !important;
+    width: min(90vw, 800px);
+}
+#table th {
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+#table td,th{
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1.5rem 0;
+       
+    opacity: 1;
+}
+
+#table tr:hover{
+    
+    opacity: 0.8;
+    
+}
+
+#table tr{
+     background-color: rgb(245, 245, 245) ;
+     opacity: 2;
+}
+
+#table td:nth-child(3n+2), th:nth-child(3n+2){
+    color:#01bb89;
+}
+
 
 @media screen and (max-width:760px){
       .card{

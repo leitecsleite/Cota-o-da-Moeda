@@ -9,10 +9,14 @@
 
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <main>
         <div id="title">
             <h1>$Cotação da moeda hoje</h1>
+            <div id="hour">
+                <p><span id="hours">24</span>:<span id="minute">24</span>:<span id="seconds">24</span> </p>
+            </div>
         </div>
 
         <section>
@@ -30,18 +34,42 @@
                 <div class="card">
                     <h2><span>₿</span>1 Bitcoin</h2>
                     <p>R$ <span id="buyBitcoin">00.00</span></p>
-                </div> 
-
-                <div id="hour">
-                 <p><span id="hours">24</span>:<span id="minute">24</span>:<span id="seconds">24</span> </p>
                 </div>
             </div>
-             
-            
+        </section>
 
+        <section class="container">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Moeda</th>
+                        <th>Compra</th>
+                        <th>Venda</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dólar US$ 1.00 </td>
+                        <td >US$ <span id='tableBuyDolar'></span></td>
+                        <td>US$ <span id="tableSellDolar"></span> 00.00</td>
+                    </tr>
+                    <tr>
+                        <td>Euro EUR 1.00 </td>
+                        <td >EUR <span id="tableBuyEuro"></span></td>
+                        <td>EUR <span id="tableSellEuro"></span> 00.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bitcoin ₿ 1.00</td>
+                        <td >₿ <span id="tableBuyBitcoin"></span></td>
+                        <td> ₿ <span id="tableSellBitcoin"></span> 00.00</td>
+                    </tr>
+                </tbody>
+
+            </table>
         </section>
     </main>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
