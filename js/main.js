@@ -16,8 +16,8 @@ fetch(url)
            return moedinha
      })
      
-    console.log(dataMoeda)
-    console.log(valueMoeda)
+        /*console.log(dataMoeda)
+        console.log(valueMoeda)*/ 
     
     buyDolar.innerHTML = valueMoeda[2]
     buyEuro.innerHTML = valueMoeda[1]
