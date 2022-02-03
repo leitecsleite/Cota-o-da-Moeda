@@ -24,5 +24,5 @@ fetch(url)
     buyBitcoin.innerHTML = valueMoeda[0]
 
 })
-},1000)
+},10000)
 
