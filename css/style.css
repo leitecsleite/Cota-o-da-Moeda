@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,100;1,400;1,700&family=Roboto:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+    font-family:'Roboto', sans-serif; 
+}
+
+#title{
+    width: 100%;
+    background-color: rgb(130, 10, 209);
+    color: rgb(255, 255, 255);
+     
+    padding: 4rem;
+    text-align: center;
+}
+
+#title h1 {
+
+    font-weight: 400;
+   /*letter-spacing: 0.09rem;*/ 
+}
+
+section{
+   margin-top: -2.2rem;
+}
+
+section .container {
+    width: min(90vw, 800px);
+    display: flex;
+    flex-direction: column;
+    justify-items:center;
+    align-items: center;
+
+    margin:auto;
+}
+
+section .card{
+    width: 50vw;
+    background-color: rgb(245, 245, 245);
+
+    margin-bottom: 1rem;
+    padding: 2rem 0 2rem 0.9rem;
+    border-radius: 0.2rem;
+}
+
+section .card p{
+    padding-top: 0.9rem ;
+}
+
+@media screen and (max-width:760px){
+      .card{
+        width: 300px !important;
+        
+    }
+}
+
+ @media screen and (max-width: 330px){
+     .card{
+         width: 98vw !important;
+     }
+ }
+
