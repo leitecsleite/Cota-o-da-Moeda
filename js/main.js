@@ -14,21 +14,31 @@ setInterval(() => {
             dataMoeda = [BTCBRL, EURBRL, USDBRL]
 
             const valueMoeda = dataMoeda.map(moeda => {
-                const moedinha = moeda.bid
+                const moedinha = (parseFloat(moeda.bid)).toFixed(2)
                 return moedinha
             })
-                      
+
+            const valueAsk = dataMoeda.map(moeda => {
+                const moedaSell = (parseFloat(moeda.ask)).toFixed(2)
+                return moedaSell 
+            })
+             
+            
             /*console.log(dataMoeda)
              console.log(valueMoeda)*/
 
             buyDolar.innerHTML = valueMoeda[2]
             buyEuro.innerHTML = valueMoeda[1]
             buyBitcoin.innerHTML = valueMoeda[0]
-
+        
 
             tableBuyDolar.textContent = valueMoeda[2]
             tableBuyEuro.textContent = valueMoeda[1]
             tableBuyBitcoin.textContent = valueMoeda[0]
+
+            tableSellDolar.textContent = valueAsk[2]
+            tableSellEuro.textContent = valueAsk[1]
+            tableSellBitcoin.textContent = valueAsk[0]
 
         })
 }, 1000)
