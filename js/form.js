@@ -8,7 +8,8 @@ elementEnviar.addEventListener( 'submit', (event) =>{
         const moedaCompraDolar = document.getElementById('tableBuyDolar')
         const valueInput = document.getElementById('valueMoeda')
 
-        const result = ((parseFloat((valueInput.value).replace(',' , '.'))) / (parseFloat(moedaCompraDolar.textContent))).toFixed(2)
+        const result = ((((parseFloat((valueInput.value).replace(',' , '.'))) /
+        (parseFloat(moedaCompraDolar.textContent))).toFixed(2)).toString()).replace('.',',');
       
         getValue.textContent = `US$ ${result}`; 
 
@@ -18,7 +19,8 @@ elementEnviar.addEventListener( 'submit', (event) =>{
          const moedaCompraEuro = document.getElementById('tableBuyEuro'); 
          const valueInput = document.getElementById('valueMoeda')
 
-         const result =((parseFloat((valueInput.value).replace(',' , '.'))) / (parseFloat(moedaCompraEuro.textContent))).toFixed(2)
+         const result =((((parseFloat((valueInput.value).replace(',' , '.'))) / 
+         (parseFloat(moedaCompraEuro.textContent))).toFixed(2)).toString()).replace('.',',');
          
          getValue.textContent = `EUR ${result}`; 
      }
@@ -27,7 +29,8 @@ elementEnviar.addEventListener( 'submit', (event) =>{
         const moedaCompraBitcoin = document.getElementById('tableBuyBitcoin'); 
         const valueInput = document.getElementById('valueMoeda')
 
-        const result =((parseFloat((valueInput.value).replace(',' , '.'))) / (parseFloat((moedaCompraBitcoin.textContent).replace('.' ,'')))).toFixed(6)
+        const result =((((parseFloat((valueInput.value).replace(',' , '.'))) /
+        (parseFloat((moedaCompraBitcoin.textContent).replace('.' ,'')))).toFixed(6)).toString()).replace('.',',')
         
         getValue.textContent = `₿ ${result}`; 
      }
