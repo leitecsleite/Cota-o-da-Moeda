@@ -81,6 +81,76 @@ section .card p{
     color:#01bb89;
 }
 
+
+form {
+    width: min(90vw, 800px);
+    background-color:rgb(245, 245, 245) ;
+    border-radius: 1rem ;
+}
+
+
+
+form fieldset,button,select {
+    border: 0 none;
+    outline: 0;
+}
+
+
+
+form fieldset legend{
+    padding: 2rem 0 2rem 0;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 0.15rem
+}
+
+form select {
+    width: 8rem;
+    padding: 1.5rem;
+    color:rgb(130, 10, 209 );
+    
+    font-size: 1rem;
+    font-weight: bold;
+
+    border-radius: 1.5rem;
+}
+form label {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+form input{
+   
+    margin-top: 2rem;
+    border: 0 none;
+    border-radius: 1.8rem; 
+    padding: 1rem; 
+ 
+    outline: 0;
+
+    font-size: 2rem;
+
+}
+
+ form button {
+    margin: 1rem 0 1rem 1rem;
+    border-radius: 1rem;
+    box-shadow: none !important;
+
+    width: 8rem;
+    padding: 1rem 1.9rem ;
+    text-align: center;
+    color:#01bb89 ;
+    font-size: 1rem;
+    font-weight: bold;
+
+    opacity: 1;
+}
+
+form button:hover{
+    opacity: 0.6;
+}
+
 footer{
     width: 100%;
     background-color: rgb(130, 10, 209);
@@ -103,9 +173,36 @@ footer h1 {
     }
 }
 
+@media screen and (max-width:511px){
+    form label {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    form input{
+        padding: 0.5rem; 
+        width: 14rem;
+    }
+
+}
+
  @media screen and (max-width: 330px){
      .card{
          width: 98vw !important;
      }
  }
+
+ @media screen and (max-width:280px){
+    form label {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    form input{
+        font-size: 1.5rem;
+        padding: 0.5rem; 
+        width: 12rem;
+    }
+ }
+
 

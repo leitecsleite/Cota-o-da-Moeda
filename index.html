@@ -50,17 +50,17 @@
                 <tbody>
                     <tr>
                         <td>Dólar US$ 1.00 </td>
-                        <td >R$ <span id='tableBuyDolar'></span></td>
+                        <td>R$ <span id='tableBuyDolar'></span></td>
                         <td>R$ <span id="tableSellDolar"></span></td>
                     </tr>
                     <tr>
                         <td>Euro EUR 1.00 </td>
-                        <td >R$ <span id="tableBuyEuro"></span></td>
+                        <td>R$ <span id="tableBuyEuro"></span></td>
                         <td>R$ <span id="tableSellEuro"></span></td>
                     </tr>
                     <tr>
                         <td>Bitcoin ₿ 1.00</td>
-                        <td >R$ <span id="tableBuyBitcoin"></span></td>
+                        <td>R$ <span id="tableBuyBitcoin"></span></td>
                         <td>R$ <span id="tableSellBitcoin"></span></td>
                     </tr>
                 </tbody>
@@ -68,8 +68,23 @@
             </table>
         </section>
 
-        <section id="info">
-        
+        <section class="container">
+            <form action="" method="post" id='formExchange'>
+                <fieldset>
+                    <legend>$Exchange </legend>
+                    <select name="moeda" id="valueExchange" form="formExchange">
+                        <option value="valueDolar">Dólar</option>
+                        <option value="valueEuro">Euro</option>
+                        <option value="valueBitcoin">Bitcoin</option>
+                    </select>
+                      <br>
+                    <label for="">R$</label>
+                    <input type="text" id="valueMoeda" placeholder="Digite o valor em Reais">
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+
+            <p id='getValue'></p>
         </section>
     </main>
 
@@ -78,6 +93,7 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
 </body>
 
 </html>

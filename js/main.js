@@ -13,32 +13,31 @@ setInterval(() => {
             let dataMoeda = []
             dataMoeda = [BTCBRL, EURBRL, USDBRL]
 
+    
+
             const valueMoeda = dataMoeda.map(moeda => {
-                const moedinha = (parseFloat(moeda.bid)).toFixed(2)
+                const moedinha = (moeda.bid).replace('.', ',')
                 return moedinha
             })
 
             const valueAsk = dataMoeda.map(moeda => {
-                const moedaSell = (parseFloat(moeda.ask)).toFixed(2)
+                const moedaSell = (moeda.ask).replace('.' , ',')
                 return moedaSell 
             })
              
-            
-            /*console.log(dataMoeda)
-             console.log(valueMoeda)*/
 
-            buyDolar.innerHTML = valueMoeda[2]
-            buyEuro.innerHTML = valueMoeda[1]
-            buyBitcoin.innerHTML = valueMoeda[0]
+            buyDolar.innerHTML = ((parseFloat((valueMoeda[2]).replace(',' ,'.')).toFixed(2)).toString()).replace('.',',')
+            buyEuro.innerHTML = ((parseFloat((valueMoeda[1]).replace(',' ,'.')).toFixed(2)).toString()).replace('.',',')
+            buyBitcoin.innerHTML = ((valueMoeda[0]).replace(',' ,'.'))
         
 
-            tableBuyDolar.textContent = valueMoeda[2]
-            tableBuyEuro.textContent = valueMoeda[1]
-            tableBuyBitcoin.textContent = valueMoeda[0]
+            tableBuyDolar.textContent = ((parseFloat((valueMoeda[2]).replace(',' ,'.')).toFixed(2)).toString()).replace('.',',')
+            tableBuyEuro.textContent = ((parseFloat((valueMoeda[1]).replace(',' ,'.')).toFixed(2)).toString()).replace('.',',')
+            tableBuyBitcoin.textContent = ((valueMoeda[0]).replace(',' ,'.'))
 
             tableSellDolar.textContent = valueAsk[2]
             tableSellEuro.textContent = valueAsk[1]
-            tableSellBitcoin.textContent = valueAsk[0]
+            tableSellBitcoin.textContent =  (valueAsk[0]).replace(',' ,'.')
 
         })
 }, 1000)
