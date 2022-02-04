@@ -125,6 +125,7 @@ form input{
     border: 0 none;
     border-radius: 1.8rem; 
     padding: 1rem; 
+    background-color:rgb(245, 245, 245) ;
  
     outline: 0;
 
@@ -133,7 +134,7 @@ form input{
 }
 
  form button {
-    margin: 1rem 0 1rem 1rem;
+    margin: 1rem 0 1rem 0.7rem;
     border-radius: 1rem;
     box-shadow: none !important;
 
