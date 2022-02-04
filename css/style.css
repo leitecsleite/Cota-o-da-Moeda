@@ -10,9 +10,9 @@
 #title{
     width: 100%;
     background-color: rgb(130, 10, 209);
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) ;
      
-    padding: 4rem;
+    padding: 5rem;
     text-align: center;
 }
 
@@ -81,6 +81,20 @@ section .card p{
     color:#01bb89;
 }
 
+footer{
+    width: 100%;
+    background-color: rgb(130, 10, 209);
+    color: rgb(255, 255, 255);
+    
+    margin-top: 8rem;
+}
+
+footer h1 {
+    text-align: center;
+    padding: 4rem;
+
+    font-weight: 400;
+}
 
 @media screen and (max-width:760px){
       .card{
