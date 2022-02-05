@@ -6,10 +6,14 @@
 
     font-family:'Roboto', sans-serif; 
 }
+:root{
+    --gray--: rgb(245, 245, 245);
+    --color--nuback--:rgb(130, 10, 209);
+}
 
 #title{
     width: 100%;
-    background-color: rgb(130, 10, 209);
+    background-color: var(--color--nuback--);
     color: rgb(255, 255, 255) ;
      
     padding: 5rem;
@@ -38,7 +42,7 @@ section{
 
 section .card{
     width: 50vw;
-    background-color: rgb(245, 245, 245);
+    background-color: var(--gray--);
 
     margin-bottom: 1rem;
     padding: 2rem 0 2rem 0.9rem;
@@ -73,7 +77,7 @@ section .card p{
 }
 
 #table tr{
-     background-color: rgb(245, 245, 245) ;
+     background-color: var(--gray--);
      opacity: 2;
 }
 
@@ -84,7 +88,7 @@ section .card p{
 
 form {
     width: min(90vw, 800px);
-    background-color:rgb(245, 245, 245) ;
+    background-color:var(--gray--) ;
     border-radius: 1rem ;
 }
 
@@ -107,7 +111,7 @@ form fieldset legend{
 form select {
     width: 8rem;
     padding: 1.5rem;
-    color:rgb(130, 10, 209 );
+    color:var(--color--nuback--);
     
     font-size: 1rem;
     font-weight: bold;
@@ -125,7 +129,7 @@ form input{
     border: 0 none;
     border-radius: 1.8rem; 
     padding: 1rem; 
-    background-color:rgb(245, 245, 245) ;
+    background-color:var(--gray--);
  
     outline: 0;
 
@@ -162,8 +166,8 @@ form p {
 
 footer{
     width: 100%;
-    background-color: rgb(130, 10, 209);
-    color: rgb(255, 255, 255);
+    background-color: var(--color--nuback--);
+    color: var(--gray--);
     
     margin-top: 8rem;
 }
@@ -174,6 +178,8 @@ footer h1 {
 
     font-weight: 400;
 }
+
+
 
 @media screen and (max-width:760px){
       .card{

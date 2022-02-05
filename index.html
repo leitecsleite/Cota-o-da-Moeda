@@ -79,13 +79,15 @@
                     </select>
                       <br>
                     <label for="">R$</label>
-                    <input type="text" id="valueMoeda"
+                    <input type="text" id="valueMoeda" 
+                     name="valueMoney"
                      placeholder="Digite o valor em Reais"
                      autofocus
                      required
                      inputmode="numeric"
                      pattern="[0-9.,]{0,10000000}"
-                     title=" R$ 00,00">
+                     title=" R$ 00,00"
+                     autocomplete="off">
                 </fieldset>
                 <button type="submit">Enviar</button>
                  <p><span id='getValue'>$$ 00,00 </span></p>
