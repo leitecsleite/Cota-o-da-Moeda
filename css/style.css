@@ -1,223 +1,211 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,100;1,400;1,700&family=Roboto:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,100;1,400;1,700&family=Roboto:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap");
 
-*{
-    box-sizing: border-box;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
 
-    font-family:'Roboto', sans-serif; 
+  font-family: "Roboto", sans-serif;
 }
-:root{
-    --gray--: rgb(245, 245, 245);
-    --color--nuback--:rgb(130, 10, 209);
+:root {
+  --gray--: rgb(245, 245, 245);
+  --color--nuback--: rgb(130, 10, 209);
 }
 
-#title{
-    width: 100%;
-    background-color: var(--color--nuback--);
-    color: rgb(255, 255, 255) ;
-     
-    padding: 5rem;
-    text-align: center;
+#title {
+  width: 100%;
+  background-color: var(--color--nuback--);
+  color: rgb(255, 255, 255);
+
+  padding: 5rem;
+  text-align: center;
 }
 
 #title h1 {
-
-    font-weight: 400;
-   /*letter-spacing: 0.09rem;*/ 
+  font-weight: 400;
+  /*letter-spacing: 0.09rem;*/
 }
 
-section{
-   margin-top: -2.2rem;
+section {
+  margin-top: -2.2rem;
 }
 
 .container {
-    width: min(90vw, 800px);
-    display: flex;
-    flex-direction: column;
-    justify-items:center;
-    align-items: center;
+  width: min(90vw, 800px);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
 
-    margin:auto;
+  margin: auto;
 }
 
-section .card{
-    width: 50vw;
-    background-color: var(--gray--);
+section .card {
+  width: 50vw;
+  background-color: var(--gray--);
 
-    margin-bottom: 1rem;
-    padding: 2rem 0 2rem 0.9rem;
-    border-radius: 0.2rem;
+  margin-bottom: 1rem;
+  padding: 2rem 0 2rem 0.9rem;
+  border-radius: 0.2rem;
 }
 
-section .card p{
-    padding-top: 0.9rem ;
+section .card p {
+  padding-top: 0.9rem;
 }
-#table{
-   
-    margin: 4rem 0 !important;
-    width: min(90vw, 800px);
+#table {
+  margin: 4rem 0 !important;
+  width: min(90vw, 800px);
 }
 #table th {
-    font-weight: 400;
-    letter-spacing: 0.1rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
 }
 
-#table td,th{
-    text-align: center;
-    margin-top: 1rem;
-    padding: 1.5rem 0;
-       
-    opacity: 1;
+#table td,
+th {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1.5rem 0;
+
+  opacity: 1;
 }
 
-#table tr:hover{
-    
-    opacity: 0.8;
-    
+#table tr:hover {
+  opacity: 0.8;
 }
 
-#table tr{
-     background-color: var(--gray--);
-     opacity: 2;
+#table tr {
+  background-color: var(--gray--);
+  opacity: 2;
 }
 
-#table td:nth-child(3n+2), th:nth-child(3n+2){
-    color:#01bb89;
+#table td:nth-child(3n + 2),
+th:nth-child(3n + 2) {
+  color: #01bb89;
 }
-
 
 form {
-    width: min(90vw, 800px);
-    background-color:var(--gray--) ;
-    border-radius: 1rem ;
+  width: min(90vw, 800px);
+  background-color: var(--gray--);
+  border-radius: 1rem;
 }
 
-
-
-form fieldset,button,select {
-    border: 0 none;
-    outline: 0;
+form fieldset,
+button,
+select {
+  border: 0 none;
+  outline: 0;
 }
 
-
-
-form fieldset legend{
-    padding: 2rem 0 2rem 0;
-    font-weight: 700;
-    font-size: 2rem;
-    letter-spacing: 0.15rem
+form fieldset legend {
+  padding: 2rem 0 2rem 0;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+  font-variant: small-caps;
 }
 
 form select {
-    width: 8rem;
-    padding: 1.5rem;
-    color:var(--color--nuback--);
-    
-    font-size: 1rem;
-    font-weight: bold;
+  width: 8rem;
+  padding: 1.5rem;
+  color: var(--color--nuback--);
 
-    border-radius: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+
+  border-radius: 1.5rem;
 }
 form label {
-    font-size: 2rem;
-    font-weight: 400;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
-form input{
-   
-    margin-top: 2rem;
-    border: 0 none;
-    border-radius: 1.8rem; 
-    padding: 1rem; 
-    background-color:var(--gray--);
- 
-    outline: 0;
+form input {
+  margin-top: 2rem;
+  border: 0 none;
+  border-radius: 1.8rem;
+  padding: 1rem;
+  background-color: var(--gray--);
 
-    font-size: 2rem;
+  outline: 0;
 
+  font-size: 2rem;
 }
 
- form button {
-    margin: 1rem 0 1rem 0.7rem;
-    border-radius: 1rem;
-    box-shadow: none !important;
+form button {
+  margin: 1rem 0 1rem 0.7rem;
+  border-radius: 1rem;
+  box-shadow: none !important;
 
-    width: 8rem;
-    padding: 1rem 1.9rem ;
-    text-align: center;
-    color:#01bb89 ;
-    font-size: 1rem;
-    font-weight: bold;
+  width: 8rem;
+  padding: 1rem 1.9rem;
+  text-align: center;
+  color: #01bb89;
+  font-size: 1rem;
+  font-weight: bold;
 
-    opacity: 1;
+  opacity: 1;
 }
 
-form button:hover{
-    opacity: 0.6;
+form button:hover {
+  opacity: 0.6;
 }
 
 form p {
-    font-size: 2rem;
-    font-weight: 400;
+  font-size: 2rem;
+  font-weight: 400;
 
-    margin: 1rem 0 1rem 0.7rem;
-    padding: 1rem 0 3rem 0;
+  margin: 1rem 0 1rem 0.7rem;
+  padding: 1rem 0 3rem 0;
 }
 
-footer{
-    width: 100%;
-    background-color: var(--color--nuback--);
-    color: var(--gray--);
-    
-    margin-top: 8rem;
+footer {
+  width: 100%;
+  background-color: var(--color--nuback--);
+  color: var(--gray--);
+
+  margin-top: 8rem;
 }
 
 footer h1 {
-    text-align: center;
-    padding: 4rem;
+  text-align: center;
+  padding: 4rem;
 
+  font-weight: 400;
+}
+
+@media screen and (max-width: 760px) {
+  .card {
+    width: 300px !important;
+  }
+}
+
+@media screen and (max-width: 511px) {
+  form label {
+    font-size: 1.5rem;
     font-weight: 400;
+  }
+
+  form input {
+    padding: 0.5rem;
+    width: 14rem;
+  }
 }
 
-
-
-@media screen and (max-width:760px){
-      .card{
-        width: 300px !important;
-        
-    }
+@media screen and (max-width: 330px) {
+  .card {
+    width: 98vw !important;
+  }
 }
 
-@media screen and (max-width:511px){
-    form label {
-        font-size: 1.5rem;
-        font-weight: 400;
-    }
+@media screen and (max-width: 280px) {
+  form label {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
 
-    form input{
-        padding: 0.5rem; 
-        width: 14rem;
-    }
-
+  form input {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    width: 12rem;
+  }
 }
-
- @media screen and (max-width: 330px){
-     .card{
-         width: 98vw !important;
-     }
- }
-
- @media screen and (max-width:280px){
-    form label {
-        font-size: 1.5rem;
-        font-weight: 400;
-    }
-
-    form input{
-        font-size: 1.5rem;
-        padding: 0.5rem; 
-        width: 12rem;
-    }
- }
-
-

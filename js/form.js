@@ -10,11 +10,11 @@ elementEnviar.addEventListener('submit', (event) => {
 
       const result = ((((parseFloat((valueInput.value))) /
          (parseFloat(moedaCompraDolar.textContent))).toFixed(2)).toString()).replace('.', ',');
-         if (result == 'NaN') {
-            alert('Dados inválido, digite número de 1 a 10 e caracter ".", ","')
-         } else {
-            getValue.textContent = `US$ ${result}`;
-         }
+      if (result == 'NaN') {
+         alert('Dados inválido, digite número de 1 a 10 e caracter ".", ","')
+      } else {
+         getValue.textContent = `US$ ${result}`;
+      }
 
    }
 

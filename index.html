@@ -77,20 +77,13 @@
                         <option value="valueEuro">Euro</option>
                         <option value="valueBitcoin">Bitcoin</option>
                     </select>
-                      <br>
-                    <label for="">R$</label>
-                    <input type="text" id="valueMoeda" 
-                     name="valueMoney"
-                     placeholder="Digite o valor em Reais"
-                     autofocus
-                     required
-                     inputmode="numeric"
-                     pattern="[0-9.,]{0,10000000}"
-                     title=" R$ 00,00"
-                     autocomplete="off">
+                    <br>
+                    <label for="valueMoney">R$</label>
+                    <input type="text" id="valueMoeda" name="valueMoney" placeholder="Digite o valor em Reais" autofocus
+                        required inputmode="numeric" pattern="[0-9.,]{0,10000000}" title=" R$ 00,00" autocomplete="off">
                 </fieldset>
                 <button type="submit">Enviar</button>
-                 <p><span id='getValue'>$$ 00,00 </span></p>
+                <p><span id='getValue'>$$ 00,00 </span></p>
             </form>
         </section>
     </main>
@@ -101,6 +94,7 @@
 
     <script src="js/main.js"></script>
     <script src="js/form.js"></script>
+    <script src="js/relogio.js"></script>
 </body>
 
 </html>
